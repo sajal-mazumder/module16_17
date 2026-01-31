@@ -39,8 +39,8 @@
 //     console.log('we are local mad')
 // } // now the string are equal
 
-let book = ' bangla';
-let boi = 'Bangla  ';
+// let book = ' bangla';
+// let boi = 'Bangla  ';
 
 // if (book.toLowerCase().trim() === boi.toLowerCase().trim() ) {
 //     console.log('i read bangla ')
@@ -56,7 +56,7 @@ let boi = 'Bangla  ';
 
 // slice, split, splice, join, includes method
 
-let country = 'america, bangladesh, india';
+// let country = 'america, bangladesh, india';
 // console.log(country.slice(1,4)); // slice
 // console.log(country.split());
 // console.log(country.split(''))
@@ -83,3 +83,73 @@ let country = 'america, bangladesh, india';
 // console.log(countryArr1.includes('v')); // false : bcz not exists
 // console.log(countryArr1.includes('a')); // false: not an element
 // console.log(countryArr1.includes('india')); // true: an element
+
+// reverse string *********
+// three ways ###
+
+// 01
+
+// let sentence = 'I am a Bangladeshi and I am a Web Developer.';
+// let reverse = '';
+// for(const letter of sentence ){
+//     // console.log(letter); // shows every letter separately
+//     // action for reverse
+//     reverse = letter + reverse ;
+//     // console.log(reverse); // shows result as a loop
+// }
+// console.log(reverse);
+
+// way 02
+
+// let sentence1 = 'I am a Bangladeshi and I am a Web Developer.';
+
+// let reversE = '';
+// for (let index = 0; index < sentence1.length; index++) {
+//     // console.log(index); // shows total index number of string
+//     // console.log(sentence1[index]); // shows every letter by its index
+//     let reverseLetter = sentence1[index];
+//     reversE = reverseLetter + reversE;
+//     // console.log(reversE); // shows its result as loop
+// }
+// console.log(reversE); // shows only reverse result for one time
+
+ // way 3: using split method:
+/**
+ * split converts a string to an array. then we can reverse array by using reverse method and to get original string as its reverse mode we can use join method
+ * */  
+
+// this is shortcut rule
+
+// let sentence2 = 'I am a Bangladeshi and I am a Web Developer.';
+
+// let reversed = sentence2.split();
+// console.log(reversed); // result as an array but not separate
+
+// let reverseD = sentence2.split('')
+// console.log(reverseD); // find every letter separately as an array with comma
+
+
+// let reverSeD = sentence2.split(' ')
+// console.log(reverSeD); // find every element separately as an array element
+
+
+// let reverSeD = sentence2.split(' ').join()
+// console.log(reverSeD); // return as string with comma
+
+
+// let reVerSeD = sentence2.split(' ').join('');
+// console.log(reVerSeD); //  shows result as a word
+
+
+// let reVerSed = sentence2.split(' ').join(' ');
+// console.log(reVerSed); //  shows result every word separately
+
+
+// let reVErSed = sentence2.split(' ').reverse().join(' '); // split space
+// console.log(reVErSed); //  reverse every word
+
+// let reVErSed = sentence2.split(' ').reverse().join(' ');
+// console.log(reVErSed); //  reverse every word
+
+// let reVErSed = sentence2.split('').reverse().join(' '); // no split space
+// console.log(reVErSed); //  reverse every single character
